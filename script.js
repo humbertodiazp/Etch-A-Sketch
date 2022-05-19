@@ -26,11 +26,13 @@ Array.from(cells).forEach(v => v.addEventListener('mouseout', function() {
 }));
 
 
-restartButton.addEventListener('click', reset())
+restartButton.addEventListener('click', reset)
 
 // restartButton.addEventListener('click', clearBlock())
+// removing the () from reset() prevents the function from being
+//called at start of program. 
 
 function reset(){
   for (const element of cells) {
-    element.style.backgroundColor = 'green';
+    element.style.backgroundColor = 'gray';
   }}
