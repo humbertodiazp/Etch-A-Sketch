@@ -14,6 +14,7 @@ body{
     height: 20px; 
     border:.0001px  
     solid black;
+    background-color: #b1acaa;
 }
 
 div.cell:hover { 
