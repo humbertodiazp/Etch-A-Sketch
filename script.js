@@ -1,8 +1,8 @@
 const cells = document.getElementsByClassName('cell');
 const restartButton = document.getElementById('reset')
-const arrayElements = [cells] 
 
 
+window.newGrid(16);
 
 function newGrid(x) {
   let i=0, n=x;
@@ -11,7 +11,6 @@ function newGrid(x) {
   `<div class="row">${'<div class="cell"></div>'.repeat(n)}</div>`
   .repeat(n)
 }
-newGrid(16);
 
 
 
@@ -27,14 +26,11 @@ Array.from(cells).forEach(v => v.addEventListener('mouseout', function() {
 }));
 
 
-restartButton.addEventListener('click', reset)
+restartButton.addEventListener('click', reset())
 
 // restartButton.addEventListener('click', clearBlock())
 
 function reset(){
-  forEach(arrayElements => {
-    arrayElements.style.backgroundColor ='gray';
-  })}
-
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+  for (const element of cells) {
+    element.style.backgroundColor = 'green';
+  }}
