@@ -22,8 +22,9 @@ background-color: #691c1c;
     color: red }
 
 .cell { 
-    width: 38.4px; 
-    height: 38.4PX; 
+    grid-template-columns:minmax(auto, 360px);
+    grid-auto-rows: auto, 360px;
+    /* border: .001px solid rgb(228, 217, 217);  */
 
     background-color: #b1acaa;
 }
@@ -91,7 +92,6 @@ background-color: #691c1c;
 
 #grid{
     border: 3px solid rgb(73, 71, 71);
-    grid-template-columns:minmax(auto, 960px);
     width: 622px;
     height: 488px;
     overflow: hidden; /* NEW */
