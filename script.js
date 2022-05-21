@@ -5,7 +5,6 @@ const secondChoice = document.getElementById('secondChoice');
 const thirdChoice = document.getElementById('thirdChoice');
 
 
-newGrid(25);
 
 function newGrid(x) {
   let i=0, n=x;
@@ -13,20 +12,27 @@ function newGrid(x) {
   grid.innerHTML = 
   `<div class="row">${'<div class="cell"></div>'.repeat(n)}</div>`
   .repeat(n)
+
+  Array.from(cells).forEach(v => v.addEventListener('mouseover', function() {                    
+    v.style.backgroundColor = 'black';             
+  }));
+  
+                    
+  Array.from(cells).forEach(v => v.addEventListener('mouseout', function() {
+  v.style.backgroundColor = 'black';
+  }));
 }
 
-
-// firstChoice.addEventListener('click', newBoard(25))
-// secondChoice.addEventListener('click', newBoard(50))
-// thirdChoice.addEventListener('click', newBoard(75))
+newGrid();
 
 
-firstChoice.addEventListener('click', ()=> newGrid(25));
+
+firstChoice.addEventListener('click', ()=> newBoard(25));
 
 
 secondChoice.addEventListener('click', ()=>newBoard(50) );
 
-thirdChoice.addEventListener('click', ()=>newGrid(75) );
+thirdChoice.addEventListener('click', ()=>newBoard(75) );
 
 
 
@@ -70,20 +76,7 @@ function newBoard(x){
 
 
 
-
-
-
-
 // for each div in grid change background on hover
-
-Array.from(cells).forEach(v => v.addEventListener('mouseover', function() {                    
-    v.style.backgroundColor = 'black';             
-  }));
-
-                    
-Array.from(cells).forEach(v => v.addEventListener('mouseout', function() {
-  v.style.backgroundColor = 'black';
-}));
 
 
 
