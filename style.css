@@ -1,6 +1,18 @@
 body{
     margin-top: 50px;
+    background-color:rgb(179, 253, 247);
     }
+
+button{
+background-color: #691c1c; 
+  border-radius: 25px;
+  color: rgb(247, 232, 35);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
 
 
 .row { 
@@ -10,20 +22,14 @@ body{
     color: red }
 
 .cell { 
-    width: 20px; 
-    height: 20px; 
-    border:.0001px  
-    solid black;
+    width: 38.4px; 
+    height: 38.4PX; 
+
     background-color: #b1acaa;
 }
-
-div.cell:hover { 
-    background-color: rgb(2, 2, 2);
-}
-
-
-
+/* 
 #whiteButton{
+    display: flex;
     z-index: 9;
     background: #ece7e6;
     width: 15%;
@@ -42,6 +48,7 @@ div.cell:hover {
    
 }
 #otherWhiteButton{
+    display: flex;
     z-index: 9;
     background: #ebe2e0;
     width: 15%;
@@ -56,26 +63,48 @@ div.cell:hover {
     text-align: center;
     border:1.6px dashed rgb(122, 121, 121);
     color:#fff;
-}
+}  */
 
 
 #redBorder{
+    display: inline;
+    width: auto;
+    height: auto;
+    overflow: hidden;
     position: relative;
     border-radius: 25px;
-    border: 63px solid red;
+    border: 63px solid #e40e0e;
+    max-width: 960px;
+    
 }
 
 #outsideBorder{
+    border: 3px solid rgb(73, 71, 71);
+    margin-left: 153.2px;
+    margin-right: 153.2px;
+    border-radius: 26.6px;
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
-
+#grid{
+    border: 3px solid rgb(73, 71, 71);
+    grid-template-columns:minmax(auto, 960px);
+    width: 622px;
+    height: 488px;
+    overflow: hidden; /* NEW */
+}
 
 #restart{
-    margin: 5px;
+    margin: 20px;
     padding: 5px;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#options{
+    display: flex;
+    gap: 15px;
 }
