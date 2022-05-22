@@ -22,6 +22,8 @@ background-color: #691c1c;
     color: red }
 
 .cell { 
+    width:50px; 
+    height: 50px; 
     grid-template-columns:minmax(auto, 360px);
     grid-auto-rows: auto, 360px;
     /* border: .001px solid rgb(228, 217, 217);  */
@@ -95,6 +97,7 @@ background-color: #691c1c;
     width: 622px;
     height: 488px;
     overflow: hidden; /* NEW */
+    background:#b1acaa;
 }
 
 #restart{
@@ -107,4 +110,17 @@ background-color: #691c1c;
 #options{
     display: flex;
     gap: 15px;
+}
+
+#choices{
+    font-size: large;
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:rgb(71, 71, 146);
+    margin-top: 30px;
+    margin-left: 300px;
+    text-align: center ;
+    justify-content: center;
+    align-items: center;
+
 }
