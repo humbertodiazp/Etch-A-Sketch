@@ -14,6 +14,21 @@ background-color: #691c1c;
   font-size: 16px;
 }
 
+.header {
+    padding: 15px; 
+    margin-left: 420px;
+    margin-right: 100px;
+    margin-bottom: 20px; 
+    color: goldenrod; 
+    text-align: center;
+    font-weight: bolder; 
+     ;
+    background-color: white; 
+    border-radius: 25px; 
+    border-top: 2px solid gray;
+    max-width: 200px;
+}
+
 
 .row { 
     display: flex; 
@@ -72,7 +87,7 @@ background-color: #691c1c;
     overflow: hidden;
     position: relative;
     border-radius: 25px;
-    border: 63px solid #e40e0e;
+    border: 65px solid #e40e0e;
     max-width: 960px;
     
 }
